@@ -10,17 +10,16 @@ I have a Master’s in Analytics from Georgia Tech and a Master’s in Mechanica
 
 ### Contact Information
 - [Resume](ToddJordan_Resume.pdf)
-- <a href="https://www.linkedin.com/in/todd-jordan-6b108a236/"> LinkedIn </a>
 - <a href="https://www.github.com/tnjordan/"> Github </a>
+- <a href="https://www.linkedin.com/in/connect-todd/"> LinkedIn </a>
 
 ### Skills
 |   |   |
 | --- | --- |
-| Languages | Python, SQL, Bash, Git, VBA, Java, Matlab, Fortran, R |
+| Programming | Python, SQL, Git, Bash, R, VBA, Java, Matlab, Fortran |
 | Data Science | Machine Learning, Natural Language Processing, LLMs, Generative AI, Deep Learning, Big Data Analytics, Time Series Analysis, Simulation, Bayesian Statistics, Regression, Computer Vision, Business Analytics, Tableau |
-| Machine Learning Operations | GitHub Actions, GCP, FastAPI, Linux/WSL2, DVC, AWS  |
+| Machine Learning Operations | GitHub Actions, Docker, GCP, FastAPI, Linux/WSL2, DVC, AWS  |
 | Collaboration | Ideation and Project Development, Jira, Agile, Scrum, Software Testing, Product Management, Code Reviews, Pair Programming, Knowledge Transfer, Technical Presentations |
-| Areas of Expertise | #TODO lots of nice keywords. ?? #keywords to get past AI filters|
 
 ---
 
@@ -28,95 +27,68 @@ I have a Master’s in Analytics from Georgia Tech and a Master’s in Mechanica
 
 ## Senior Data Scientist ~ Paccar
 _Senior Data Scientist - May 2024 to present_\
-_Data Scientist - September 2021 to May 2024_\
+_Data Scientist - September 2021 to May 2024_
 
 Senior data scientist in Paccar's advanced analytics organization, with a proven track record of developing and deploying AI/ML-enabled models, managing data pipelines, and leading technical teams. I provide leadership as the lead data scientist on each project and by mentoring junior data scientists. By continually exploring the data for business insights, I am successful at identifying trends, anomalies, and opportunities to optimize decision-making. By leveraging advanced analytics and machine learning techniques, I uncover actionable insights that drive efficiency, reduce costs, and enhance overall business strategy. Whether refining predictive models, improving data pipelines, or collaborating with stakeholders, my focus remains on transforming raw data into meaningful, high-impact solutions.
 
 
-Data Science
+#### Data Science
 
-  Lead data scientist for Paccar Financial data science projects. Developed models from concept to deployment, the models predicting financial product rates, predicting sale prices, and identifying similar vehicles in inventory. Ran jira board, daily standups, sprint reviews, and presented quarterly results to executive stakeholders. Maintained existing models performance through data drift detection, retraining and feature selection.
+  - Lead data scientist for Paccar Financial data science projects. Developed models from concept to deployment, the models predicting financial product rates, predicting sale prices, and identifying similar vehicles in inventory. Ran jira board, daily standups, sprint reviews, and presented quarterly results to executive stakeholders. Maintained existing models performance through data drift detection, retraining and feature selection.
 
-  Invited by DAF to the Netherlands to run a workshop focused on data science and MLops best practices in order to accelerate the DAF analytics team's learning curve. In addition to delivering daily presentations, I led a team through the data science process to investigate root causes and enable early detection of a critical component failure.
+  - Invited by DAF to the Netherlands to run a workshop focused on data science and MLops best practices in order to accelerate the DAF analytics team's learning curve. In addition to delivering daily presentations, I led a team through the data science process to investigate root causes and enable early detection of a critical component failure.
 
-  Designed, organized and lead workshops implementing end-to-end machine learning project pipelines. Starting with setting up GCP instances, fetching data from Snowflake, and then building models.  I then demonstrated how to build FastAPIs to provide model inference, use Docker to containerize the model, deploy the API with CloudRun.  Finally, I demonstrated the process for building CICD pipelines in GitHub Actions to train, containerize and deploy the model, while versioning the project with git tags and DVC.
+  - Designed, organized and lead workshops implementing end-to-end machine learning project pipelines. Starting with setting up GCP instances, fetching data from Snowflake, and then building models.  I then demonstrated how to build FastAPIs to provide model inference, use Docker to containerize the model and API, and how to deploy the API with CloudRun.  Finally, I demonstrated the process for building CICD pipelines in GitHub Actions to train, containerize and deploy the model, while versioning the project with git tags and DVC.
 
-  Conducted drive-train reliability analysis using Cox Proportional Hazards (Cox-PH) and Weibull distributions to develop a Monte Carlo simulation that modeled potential failures, helping to estimate business liabilities.
-
-
-Machine Learning Operations
-  Developed CICD pipelines using GitHub Actions for all Paccar Financial models. Pipelines ran scheduled retraining to create a PR for user approval which would trigger model deployments and promotion to desired deployment environment. I wrote FastAPIs to provide model inference and containerized production code and models. Docker images were deployed to GCP or AWS.
-
-  Advised end-to-end design planning and reviews for external contractors working on other data science products. The warranty inference system design utilized Kafka streaming and a custom connector to call the models before logging and returning output. The pricing product's deployment was done using VertexAI.
-
-  Built logging into APIs and used GCP sinks to collect API logs in a bucket, which were then parsed and upload into Snowflake for performance evaluation dashboards in Tableau.
-
-  Trained MLops Engineer on existing deployments and team standards.  I continue to advise on new deployments as needed.  
-
-Leader of Team
-
-  Review work done by junior members of team.
-  Review all code implemented for each product in Paccar's advanced analytics organization.
-  Set development standards for team.
-  Mentor associate data scientists on the team.
-  Lead weekly data science team discussion & debugging sessions
-
-  GitHub administrator for Paccar's analytics organization.
-  * Hackathon winner x2
-  * Run annual data science workshop - talk about debugging workshop here
-  * Run Jira/Sprint and manage contractors
-  * GitHub copilot focus group?
+  - Conducted drive-train reliability analysis using Cox Proportional Hazards (Cox-PH) and Weibull distributions to develop a Monte Carlo simulation that modeled potential failures, helping to estimate business liabilities.
 
 
+#### Machine Learning Operations
+  - Developed CICD pipelines using GitHub Actions for all Paccar Financial models. Pipelines ran scheduled retraining to create a PR for user approval which would trigger model deployments and promotion to desired deployment environment. I wrote FastAPIs to provide model inference and containerized production code and models. Docker images were deployed to GCP or AWS.
+
+  - Advised end-to-end design planning and reviews for external contractors working on other data science products. The warranty inference system design utilized Kafka streaming and a custom connector to call the models before logging and returning output. The pricing product's deployment was done using VertexAI.
+
+  - Built logging into APIs and used GCP sinks to collect API logs in a bucket, which were then parsed and upload into Snowflake for performance evaluation dashboards in Tableau.
+
+  - Trained MLops Engineer on existing deployments and team standards.  I continue to advise on new deployments as needed.  
+
+#### Leader of Team
+
+  - Review work done by junior members of team.
+  - Review all code implemented for each product in Paccar's advanced analytics organization.
+  - Set development standards for team.
+  - Mentor associate data scientists on the team.
+  - Lead weekly data science team discussion & debugging sessions
+  - GitHub administrator for Paccar's advanced analytics organization.
+  - Won 2022 and 2023 department hackathons; creating solutions for using data-streaming of truck data and building a Kafka stream to enhance truck build data before Snowflake archival respectively.
+  - Develop and run annual data science workshop for Paccar's advanced analytic team.
 
 
-#! RESUME HERE =================================> 
-Review all code going into production for team.
-Senior most employee of data science team. (? This is both good and bad, big fish small pond.)
-  *? section on being lone employee or just talk about that
-Set development standards for team.
-Host weekly Team Tech Time for team debugging and discussions.
-Annual team workshop host:
-  Lead team workshop including hackathon and debugging exercise.  # move that debugging exercise to personal github
-  Get pipeline year from Joseph's resume thing
-Mentor to Associate Data Scientist
-Won Digital 2022 and 2023 hackathon.
-Provides critical debugging and analysis support on all projects.
-Manage contractors:
-  * Manages contractor's tasks and provides guidance to ensure best possible product is delivered.
-Provide API integration support to IT.
+# Education
+
+## Master of Science - Analytics
+_Georgia Institute of Technology // Graduation: 05/2024_\
+Coursework:
+- Simulation
+- Data & Visual Analytics
+- Introduction to Modeling
+- Introduction to Computing
+- Business Fundamentals
+- Business Data Analytics
+- Regression Analysis
+- Bayesian Statistics
+- High Dimensional Data Analytics
+- Machine Learning
+- Human Computer Interaction
+
+## Master of Science - Mechanical Engineering  
+_North Carolina State University // 08/2011 – 05/2013_  
+
+## Bachelor of Science - Aerospace Engineering  
+_North Carolina State University // 08/2006 – 05/2011_ 
 
 
-DAF Fuel Injectors (see if still have ppt of this)
-warranty -> WIE and CICD
-interest rate predictions
-Auto-Approval of Financial Products
-used truck pricing
-used truck lead generation
-
-
-
--- Quality lines
-Is self sufficient and able to discuss a problem with business stakeholders and present machine learning solutions based on an accurate and logical analysis of the customers business requirements. 
-
-
-
-
-A sentence description.
-
-Leadership & Strategic Planning:
-- Blah
-
-Technical Lead:
-- Blah
-
-Collaboration & Community Building:
-- Blah
-
-Projects:?
-- Blah
-
- <=================== RESUME HERE !#
+## Other Careers
 
 ## Patent Examiner ~ United States Patent Office  
 _06/2018 – 09/2021_  
@@ -142,7 +114,6 @@ _09/2013 – 12/2013_
 - Performed and documented manual/automated software testing on aircraft fire suppression systems.  
 - Ensured compliance with FAA regulations for software considerations in airborne systems.  
 
-
 ## Internships
 ### Assembly Layout & Tooling ~ GE Aviation  
 _05/2012 – 12/2012_  
@@ -164,26 +135,3 @@ _05/2008 – 08/2008, 01/2009 – 05/2009, 08/2009 – 12/2009_
 - Designed over 50 industrial and commercial HVAC systems, ensuring compliance with building codes and regulations.  
 
 ---
-
-# Education
-
-## Master of Science - Analytics
-_Georgia Institute of Technology // GPA: 3.X // Graduation: 05/2024_\
-Coursework:
-- Simulation
-- Data & Visual Analytics
-- Introduction to Modeling
-- Introduction to Computing
-- Business Fundamentals
-- Business Data Analytics
-- Regression Analysis
-- Bayesian Statistics
-- High Dimensional Data Analytics
-- Machine Learning
-- Human Computer Interaction
-
-## Master of Science - Mechanical Engineering  
-_North Carolina State University // GPA: 3.9 // 08/2011 – 05/2013_  
-
-## Bachelor of Science - Aerospace Engineering  
-_North Carolina State University // GPA: 3.7 // 08/2006 – 05/2011_ 

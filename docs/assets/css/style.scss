@@ -1,0 +1,25 @@
+---
+---
+// Note: If you'd like to change the theme's Sass variables, you must set new values before the @import line in your stylesheet.
+
+#banner {
+    background: #4a707f;
+    border: #4a707f;
+}
+#banner .button{
+    background: #c1c0c0;
+    border: #888;
+}
+header {
+    background: #444;
+    text-shadow: #444;
+}
+body {
+    background: #c1c0c0;
+}
+header h1 {
+    text-shadow: 0px 2px 0px #444444;
+}
+
+// https://github.com/pages-themes/leap-day
+@import "{{ site.theme }}";
