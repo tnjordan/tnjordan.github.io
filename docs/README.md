@@ -4,7 +4,7 @@
 **<div style="text-align: right"> <span style="font-size: larger; font-size: larger;">msc analytics, msc mechanical engineering, bsc aerospace engineering</span>** </div>
 
 An engineering data scientist, driven by [curiosity](https://hbr.org/2018/11/curiosity-driven-data-science) and a passion for improving systems through efficiency gains.
-I am a senior data scientist with years of experience analyzing data, developing machine learning models, and developing and deploying CICD pipelines.  
+I am a senior data scientist with several years of experience analyzing data, developing machine learning models, and developing and deploying CICD pipelines.  
 My area of interest and expertise is at the intersection between programming and driving business value.
 I have a Master’s in Analytics from Georgia Tech and a Master’s in Mechanical Engineering with a Bachelor’s in Aerospace Engineering from NC State.
 
@@ -29,16 +29,16 @@ I have a Master’s in Analytics from Georgia Tech and a Master’s in Mechanica
 _Senior Data Scientist - May 2024 to present_\
 _Data Scientist - September 2021 to May 2024_
 
-Senior data scientist in Paccar's advanced analytics organization, with a proven track record of developing and deploying AI/ML-enabled models, managing data pipelines, and leading technical teams. I provide leadership as the lead data scientist on each project and by mentoring junior data scientists. By continually exploring the data for business insights, I am successful at identifying trends, anomalies, and opportunities to optimize decision-making. By leveraging advanced analytics and machine learning techniques, I uncover actionable insights that drive efficiency, reduce costs, and enhance overall business strategy. Whether refining predictive models, improving data pipelines, or collaborating with stakeholders, my focus remains on transforming raw data into meaningful, high-impact solutions.
+Senior data scientist in Paccar's advanced analytics organization, with a proven track record of developing and deploying AI/ML-enabled models, managing data pipelines, and leading technical teams. I provide leadership as the lead data scientist on each project and by mentoring junior data scientists. By continually exploring the data for business insights, I am successful at identifying trends, anomalies, and opportunities to optimize decision-making. Through leveraging advanced analytics and machine learning techniques, I uncover actionable insights that drive efficiency, reduce costs, and enhance overall business strategy. Whether refining predictive models, improving data pipelines, or collaborating with stakeholders, my focus remains on transforming raw data into meaningful, high-impact solutions.
 
 
 #### Data Science
 
-  - Lead data scientist for Paccar Financial data science projects. Developed models from concept to deployment, the models predicting financial product rates, predicting sale prices, and identifying similar vehicles in inventory. Ran jira board, daily standups, sprint reviews, and presented quarterly results to executive stakeholders. Maintained existing models performance through data drift detection, retraining and feature selection.
+  - Lead data scientist for Paccar Financial data science projects. Developed models from concept to deployment: predicting financial product rates, predicting sale prices, and identifying similar vehicles in inventory. Ran jira board, daily standups, sprint reviews, and presented quarterly results to executive stakeholders. Maintained existing model performance through data drift detection, retraining, and feature selection.
 
   - Invited by DAF to the Netherlands to run a workshop focused on data science and MLops best practices in order to accelerate the DAF analytics team's learning curve. In addition to delivering daily presentations, I led a team through the data science process to investigate root causes and enable early detection of a critical component failure.
 
-  - Designed, organized and lead workshops implementing end-to-end machine learning project pipelines. Starting with setting up GCP instances, fetching data from Snowflake, and then building models.  I then demonstrated how to build FastAPIs to provide model inference, use Docker to containerize the model and API, and how to deploy the API with CloudRun.  Finally, I demonstrated the process for building CICD pipelines in GitHub Actions to train, containerize and deploy the model, while versioning the project with git tags and DVC.
+  - Designed, organized, and lead workshops implementing end-to-end machine learning project pipelines. Starting with setting up GCP instances, fetching data from Snowflake, and then building models.  I then demonstrated how to build FastAPIs to provide model inference, use Docker to containerize the model and API, and how to deploy the API with CloudRun.  Finally, I demonstrated the process for building CICD pipelines in GitHub Actions to train, containerize and deploy the model, while versioning the project with git tags and DVC.
 
   - Conducted drive-train reliability analysis using Cox Proportional Hazards (Cox-PH) and Weibull distributions to develop a Monte Carlo simulation that modeled potential failures, helping to estimate business liabilities.
 
@@ -61,7 +61,7 @@ Senior data scientist in Paccar's advanced analytics organization, with a proven
   - Lead weekly data science team discussion & debugging sessions
   - GitHub administrator for Paccar's advanced analytics organization.
   - Won 2022 and 2023 department hackathons; creating solutions for using data-streaming of truck data and building a Kafka stream to enhance truck build data before Snowflake archival respectively.
-  - Develop and run annual data science workshop for Paccar's advanced analytic team.
+  - Develop and run annual data science workshop for Paccar's advanced analytics team.
 
 
 # Education
