@@ -9,7 +9,7 @@ My area of interest and expertise is at the intersection between programming and
 I have a Master’s in Analytics from Georgia Tech and a Master’s in Mechanical Engineering with a Bachelor’s in Aerospace Engineering from NC State.
 
 ### Contact Information
-- [Resume](ToddJordan_Resume.pdf)
+- [Resume](cv.pdf)
 - <a href="https://www.github.com/tnjordan/"> Github </a>
 - <a href="https://www.linkedin.com/in/connect-todd/"> LinkedIn </a>
 
