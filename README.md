@@ -1,1 +1,1 @@
-# [tnjordan.github.io](https://tnjordan.github.io/)
+# tnjordan.github.io
