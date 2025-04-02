@@ -3,57 +3,21 @@
 // Note: If you'd like to change the theme's Sass variables, you must set new values before the @import line in your stylesheet.
 // https://github.com/pages-themes/leap-day
 @import "{{ site.theme }}";
-
 #banner {
-    background: #320488; /* Dark purple background */
-    border: #5900ff; /* Dark purple border */
+    background: #4a707f;
+    border: #4a707f;
 }
-#banner .button {
-    background: #FEDE5D; /* Bright yellowish accent for buttons */
-    border: #ff9900; /* Soft orange border for contrast */
+#banner .button{
+    background: #c1c0c0;
+    border: #888;
 }
 header {
-    background: #3e1f5f; /* Dark purple background with a deeper shade */
-    text-shadow: 0px 2px 0px #ff7edb; /* Light pink text shadow for synth-wave effect */
+    background: #444;
+    text-shadow: #444;
 }
 body {
-    background: #2e003e; /* Dark purple background for the body */
+    background: #c1c0c0;
 }
 header h1 {
-    text-shadow: 0px 2px 0px #8c00ff; /* Purple text shadow with a synth-wave vibe */
-}
-
-// Custom styles for the sidebar
-nav {
-  a {
-    color: #36bbf9; /* Cyan color for links */
-  }
-
-  a:hover {
-    color: #ff7edb; /* Light pink on hover */
-  }
-
-  a:focus {
-    outline: 3px solid #ff7edb; /* Pink outline for focus */
-  }
-
-  /* Specific color for tag-h1 links */
-  .tag-h1 a {
-    color: #ff9900; /* Orange color for tag-h1 links */
-  }
-
-  /* Specific color for tag-h2 links */
-  .tag-h2 a {
-    color: #36bbf9; /* Cyan color for tag-h2 links */
-  }
-
-  /* Specific color for tag-h3 links */
-  .tag-h3 a {
-    color: #8c00ff; /* Purple color for tag-h3 links */
-  }
-
-  /* Active link color */
-  .active a {
-    color: #ff7edb; /* Light pink for active link */
-  }
+    text-shadow: 0px 2px 0px #444444;
 }
