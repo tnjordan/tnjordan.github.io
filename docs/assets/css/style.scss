@@ -25,36 +25,35 @@ header h1 {
 
 // Custom styles for the sidebar
 nav {
-    a {
-      color: #36bbf9; // Cyan color for links
-  
-      &:hover {
-        color: #ff7edb; // Light cyan on hover
-      }
-  
-      &:focus {
-        outline: 3px solid #ff7edb; // Pink outline for focus
-      }
-    }
-  
-    // Specific color for tag-h1 links
-    li.tag-h1 a {
-      color: #ff9900; // Orange color for tag-h1 links
-    }
-  
-    // Specific color for tag-h2 links
-    li.tag-h2 a {
-      color: #36bbf9; // Cyan color for tag-h2 links
-    }
-  
-    // Specific color for tag-h3 links
-    li.tag-h3 a {
-      color: #8c00ff; // Purple color for tag-h3 links
-    }
-  
-    // Active link color
-    li.active a {
-      color: #ff7edb; // Light pink for active link
-      font-weight: bold; // Bold active link
-    }
+  a {
+    color: #36bbf9; /* Cyan color for links */
   }
+
+  a:hover {
+    color: #ff7edb; /* Light pink on hover */
+  }
+
+  a:focus {
+    outline: 3px solid #ff7edb; /* Pink outline for focus */
+  }
+
+  /* Specific color for tag-h1 links */
+  .tag-h1 a {
+    color: #ff9900; /* Orange color for tag-h1 links */
+  }
+
+  /* Specific color for tag-h2 links */
+  .tag-h2 a {
+    color: #36bbf9; /* Cyan color for tag-h2 links */
+  }
+
+  /* Specific color for tag-h3 links */
+  .tag-h3 a {
+    color: #8c00ff; /* Purple color for tag-h3 links */
+  }
+
+  /* Active link color */
+  .active a {
+    color: #ff7edb; /* Light pink for active link */
+  }
+}
