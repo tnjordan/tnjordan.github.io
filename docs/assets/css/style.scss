@@ -23,15 +23,38 @@ header h1 {
     text-shadow: 0px 2px 0px #8c00ff; /* Purple text shadow with a synth-wave vibe */
 }
 
-/* Nav text in cyan */
+// Custom styles for the sidebar
 nav {
-    color: #36bbf9; /* Cyan text color for navigation */
-}
-
-nav a {
-    color: #36bbf9; /* Cyan links in the nav */
-}
-
-nav a:hover {
-    color: #ff7edb; /* Light cyan on hover for nav links */
-}
+    a {
+      color: #36bbf9; // Cyan color for links
+  
+      &:hover {
+        color: #ff7edb; // Light cyan on hover
+      }
+  
+      &:focus {
+        outline: 3px solid #ff7edb; // Pink outline for focus
+      }
+    }
+  
+    // Specific color for tag-h1 links
+    li.tag-h1 a {
+      color: #ff9900; // Orange color for tag-h1 links
+    }
+  
+    // Specific color for tag-h2 links
+    li.tag-h2 a {
+      color: #36bbf9; // Cyan color for tag-h2 links
+    }
+  
+    // Specific color for tag-h3 links
+    li.tag-h3 a {
+      color: #8c00ff; // Purple color for tag-h3 links
+    }
+  
+    // Active link color
+    li.active a {
+      color: #ff7edb; // Light pink for active link
+      font-weight: bold; // Bold active link
+    }
+  }
