@@ -1,25 +1,24 @@
 ---
 ---
 // Note: If you'd like to change the theme's Sass variables, you must set new values before the @import line in your stylesheet.
-
-#banner {
-    background: #4a707f;
-    border: #4a707f;
-}
-#banner .button{
-    background: #c1c0c0;
-    border: #888;
-}
-header {
-    background: #444;
-    text-shadow: #444;
-}
-body {
-    background: #c1c0c0;
-}
-header h1 {
-    text-shadow: 0px 2px 0px #444444;
-}
-
 // https://github.com/pages-themes/leap-day
 @import "{{ site.theme }}";
+
+#banner {
+    background: #5900ff; /* Dark purple background */
+    border: #5900ff; /* Dark purple border */
+}
+#banner .button {
+    background: #FEDE5D; /* Bright yellowish accent for buttons */
+    border: #ff9900; /* Soft orange border for contrast */
+}
+header {
+    background: #3e1f5f; /* Dark purple background with a deeper shade */
+    text-shadow: 0px 2px 0px #ff7edb; /* Light pink text shadow for synth-wave effect */
+}
+body {
+    background: #2e003e; /* Dark purple background for the body */
+}
+header h1 {
+    text-shadow: 0px 2px 0px #8c00ff; /* Purple text shadow with a synth-wave vibe */
+}
