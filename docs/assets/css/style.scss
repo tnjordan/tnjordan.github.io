@@ -5,7 +5,7 @@
 @import "{{ site.theme }}";
 
 #banner {
-    background: #5900ff; /* Dark purple background */
+    background: #320488; /* Dark purple background */
     border: #5900ff; /* Dark purple border */
 }
 #banner .button {
@@ -21,4 +21,17 @@ body {
 }
 header h1 {
     text-shadow: 0px 2px 0px #8c00ff; /* Purple text shadow with a synth-wave vibe */
+}
+
+/* Nav text in cyan */
+nav {
+    color: #36bbf9; /* Cyan text color for navigation */
+}
+
+nav a {
+    color: #36bbf9; /* Cyan links in the nav */
+}
+
+nav a:hover {
+    color: #ff7edb; /* Light cyan on hover for nav links */
 }
