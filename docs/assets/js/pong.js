@@ -32,7 +32,7 @@ const PongGame = {
         
         // Initialize game state
         this.resetGame();
-        this.updateMessage('Click Start to begin playing! Use ↑ and ↓ arrow keys to move your paddle.');
+        this.updateMessage('Press spacebar to begin playing! Use ↑ and ↓ arrow keys to move your paddle.');
     },
     
     setupEventListeners() {
@@ -109,7 +109,7 @@ const PongGame = {
             cancelAnimationFrame(this.animationId);
         }
         this.resetGame();
-        this.updateMessage('Click Start to begin playing! Use ↑ and ↓ arrow keys to move your paddle.');
+        this.updateMessage('Press spacebar to begin playing! Use ↑ and ↓ arrow keys to move your paddle.');
     },
     
     resetGame() {
@@ -273,7 +273,7 @@ const PongGame = {
         
         // Show play again message
         setTimeout(() => {
-            this.updateMessage(`Game Over! Click Reset to play again. Final Score: ${this.score.player} - ${this.score.computer}`);
+            this.updateMessage(`Game Over! Press R to play again. Final Score: ${this.score.player} - ${this.score.computer}`);
         }, 2000);
     },
     
