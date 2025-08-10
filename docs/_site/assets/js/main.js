@@ -91,6 +91,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     e.preventDefault();
                     switchTab('portfolio');
                     break;
+                case '4':
+                    e.preventDefault();
+                    switchTab('pong');
+                    break;
             }
         }
     });
