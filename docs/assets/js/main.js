@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
             activeButton.classList.add('active');
             activeContent.classList.add('active');
             
+            // Scroll to the top of the page smoothly
+            window.scrollTo({ 
+                top: 0, 
+                behavior: 'smooth' 
+            });
+            
             // Update URL hash without scrolling
             history.pushState(null, null, `#${targetTab}`);
         }

@@ -241,7 +241,12 @@ html, body {
     border-radius: var(--radius-lg);
     padding: 0.5rem;
     border: 2px solid var(--border);
-    position: relative;
+    position: sticky;
+    top: 2px;
+    z-index: 100;
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     overflow: hidden;
 }
 

@@ -40,7 +40,7 @@ html, body { background: #0a0a0f !important; background-color: #0a0a0f !importan
 .contact-link:hover { color: var(--background); transform: translateY(-5px) scale(1.1); box-shadow: var(--glow-cyan); border-color: var(--neon-cyan); }
 
 /* Tab Navigation */
-.tab-nav { display: flex; justify-content: center; margin-bottom: 3rem; background: var(--surface); border-radius: var(--radius-lg); padding: 0.5rem; border: 2px solid var(--border); position: relative; overflow: hidden; }
+.tab-nav { display: flex; justify-content: center; margin-bottom: 3rem; background: var(--surface); border-radius: var(--radius-lg); padding: 0.5rem; border: 2px solid var(--border); position: sticky; top: 2px; z-index: 100; box-shadow: var(--shadow-lg); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); overflow: hidden; }
 
 .tab-nav::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: var(--gradient-neon); opacity: 0.1; animation: pulse-glow 2s ease-in-out infinite alternate; }
 
