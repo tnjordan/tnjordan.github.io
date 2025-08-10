@@ -34,6 +34,7 @@
             <button class="tab-button active" data-tab="about">About Me</button>
             <button class="tab-button" data-tab="resume">Resume</button>
             <button class="tab-button" data-tab="portfolio">Portfolio</button>
+            <button class="tab-button" data-tab="pong">Pong</button>
         </nav>
 
         <main class="main-content">
@@ -226,6 +227,46 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Pong Tab -->
+            <div id="pong" class="tab-content">
+                <div class="content-section">
+                    <h2>Pong</h2>
+                    <p class="pong-intro">Classic Pong game built with HTML5 Canvas and vanilla JavaScript. Use the UP and DOWN arrow keys to control your paddle!</p>
+                    
+                    <div class="pong-container">
+                        <div class="pong-score-detailed">
+                            <div class="score-section">
+                                <h3>Player</h3>
+                                <span id="playerScore" class="score-number">0</span>
+                            </div>
+                            <div class="score-divider">VS</div>
+                            <div class="score-section">
+                                <h3>Computer</h3>
+                                <span id="computerScore" class="score-number">0</span>
+                            </div>
+                        </div>
+                        
+                        <div id="pongMessage" class="pong-message"></div>
+                        
+                        <div class="pong-game-area">
+                            <canvas id="pongCanvas" width="800" height="400"></canvas>
+                            <div class="pong-controls">
+                                <div class="control-instructions">
+                                    <p><strong>Controls:</strong> Use ↑ and ↓ arrow keys to move your paddle</p>
+                                    <p><strong>Shortcuts:</strong> Space = Start/Pause • R = Reset</p>
+                                    <p><strong>Goal:</strong> First to 3 points wins!</p>
+                                </div>
+                                <div class="control-buttons">
+                                    <button id="pongStartBtn" class="pong-button">Start Game</button>
+                                    <button id="pongPauseBtn" class="pong-button">Pause</button>
+                                    <button id="pongResetBtn" class="pong-button">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="footer">
@@ -234,5 +275,6 @@
     </div>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/pong.js"></script>
 </body>
 </html>
