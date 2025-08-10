@@ -1,1 +1,4 @@
 dev.txt
+
+# Jekyll build output
+docs/_site/
