@@ -1,4 +1,4 @@
-// Pong Game - Classic arcade game implementation
+// Pong - Classic arcade game implementation
 // Controls: Use UP and DOWN arrow keys to control your paddle
 
 const PongGame = {
