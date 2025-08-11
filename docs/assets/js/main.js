@@ -117,4 +117,33 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.portfolio-item, .experience-item, .skill-category').forEach(el => {
         observer.observe(el);
     });
+
+    // Professional Mode Toggle
+    const professionalModeBtn = document.getElementById('professionalModeBtn');
+    const body = document.body;
+    
+    // Check if professional mode is saved in localStorage
+    const isProfessionalMode = localStorage.getItem('professionalMode') === 'true';
+    
+    if (isProfessionalMode) {
+        body.classList.add('professional-mode');
+        professionalModeBtn.classList.add('active');
+        professionalModeBtn.innerHTML = '<i class="fas fa-palette"></i><span>Creative Mode</span>';
+    }
+    
+    // Toggle professional mode
+    professionalModeBtn.addEventListener('click', function() {
+        body.classList.toggle('professional-mode');
+        const isActive = body.classList.contains('professional-mode');
+        
+        if (isActive) {
+            professionalModeBtn.classList.add('active');
+            professionalModeBtn.innerHTML = '<i class="fas fa-palette"></i><span>Creative Mode</span>';
+            localStorage.setItem('professionalMode', 'true');
+        } else {
+            professionalModeBtn.classList.remove('active');
+            professionalModeBtn.innerHTML = '<i class="fas fa-briefcase"></i><span>Professional Mode</span>';
+            localStorage.setItem('professionalMode', 'false');
+        }
+    });
 });
