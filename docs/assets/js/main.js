@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (isProfessionalMode) {
         body.classList.add('professional-mode');
         professionalModeBtn.classList.add('active');
-        professionalModeBtn.innerHTML = '<i class="fas fa-palette"></i><span>Creative Mode</span>';
+        professionalModeBtn.innerHTML = '<i class="fas fa-briefcase"></i><span>Professional Mode</span>';
         toggleProfessionalMode(true);
     }
     
@@ -170,11 +170,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (isActive) {
             professionalModeBtn.classList.add('active');
-            professionalModeBtn.innerHTML = '<i class="fas fa-palette"></i><span>Creative Mode</span>';
+            professionalModeBtn.innerHTML = '<i class="fas fa-briefcase"></i><span>Professional Mode</span>';
             localStorage.setItem('professionalMode', 'true');
         } else {
             professionalModeBtn.classList.remove('active');
-            professionalModeBtn.innerHTML = '<i class="fas fa-briefcase"></i><span>Professional Mode</span>';
+            professionalModeBtn.innerHTML = '<i class="fas fa-palette"></i><span>Creative Mode</span>';
             localStorage.setItem('professionalMode', 'false');
         }
         
