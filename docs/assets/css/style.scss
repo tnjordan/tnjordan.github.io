@@ -236,11 +236,11 @@ html, body {
 .tab-nav {
     display: flex;
     justify-content: center;
+    align-items: center; /* Vertically center contents */
     margin-bottom: 3rem;
     background: var(--surface);
     border-radius: var(--radius-lg);
     padding: 0.5rem;
-    border: 2px solid var(--border);
     position: sticky;
     top: 2px;
     z-index: 100;
@@ -257,9 +257,26 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: var(--radius-lg);
+    padding: 2px;
+    background: var(--gradient-neon);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+    z-index: -1;
+}
+
+.tab-nav::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: var(--gradient-neon);
     opacity: 0.1;
     animation: pulse-glow 2s ease-in-out infinite alternate;
+    z-index: -2;
 }
 
 @keyframes pulse-glow {
@@ -268,7 +285,7 @@ html, body {
 }
 
 .tab-button {
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     border: none;
     background: transparent;
     font-size: 1.1rem;
@@ -282,6 +299,10 @@ html, body {
     font-family: inherit;
     text-transform: uppercase;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    margin: 0 0.25rem; /* Add consistent horizontal spacing */
 }
 
 .tab-button::before {
@@ -300,7 +321,8 @@ html, body {
 
 .tab-button:hover {
     color: var(--text-primary);
-    transform: translateY(-2px);
+    transform: none; /* Remove transform to maintain consistent positioning */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); /* Add subtle glow instead */
 }
 
 .tab-button:hover::before {
@@ -311,7 +333,9 @@ html, body {
     color: var(--background);
     background: var(--gradient-neon);
     box-shadow: var(--glow-cyan);
-    transform: translateY(-2px);
+    transform: none; /* Remove translateY to prevent offset */
+    margin: 0 0.5rem; /* Add horizontal margin for spacing */
+    position: relative; /* Ensure positioning context for absolute elements */
 }
 
 .tab-button.active::before {
@@ -1223,7 +1247,8 @@ html, body {
     .tab-nav {
         flex-direction: column;
         align-items: stretch;
-        padding: 0.25rem;
+        padding: 0.5rem;
+        min-height: auto; /* Reset min-height for mobile */
     }
     
     .tab-button {
@@ -1231,6 +1256,11 @@ html, body {
         margin: 0.25rem 0;
         text-align: center;
         border-radius: var(--radius);
+        justify-content: center; /* Ensure horizontal centering on mobile */
+    }
+    
+    .tab-button.active {
+        margin: 0.35rem 0; /* Match the regular button margin */
     }
     
     .content-section {
