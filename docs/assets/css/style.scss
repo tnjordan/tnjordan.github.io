@@ -89,10 +89,10 @@ body.professional-mode {
     --glow-purple: 0 2px 8px rgba(107, 114, 128, 0.2);
     --glow-green: 0 2px 8px rgba(5, 150, 105, 0.2);
     
-    /* Corporate Gradients */
-    --gradient-neon: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    --gradient-surface: linear-gradient(135deg, var(--surface), var(--surface-hover));
-    --gradient-text: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    /* Corporate Gradients - Changed to solid colors */
+    --gradient-neon: var(--primary-color);
+    --gradient-surface: var(--surface);
+    --gradient-text: var(--primary-color);
     
     /* Neon colors redefined for corporate */
     --neon-cyan: #2563eb;
@@ -110,15 +110,41 @@ body.professional-mode {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Disable animations in professional mode */
+/* Disable animations and gradients in professional mode */
 body.professional-mode .profile-info h1 {
     animation: none;
     text-shadow: none;
+    background: none !important;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
 }
 
 body.professional-mode * {
     animation: none !important;
     text-shadow: none !important;
+}
+
+/* Remove all gradients in professional mode */
+body.professional-mode .content-section h2,
+body.professional-mode .skill-tags span,
+body.professional-mode .download-btn,
+body.professional-mode .professional-mode-btn.active,
+body.professional-mode .tab-button.active,
+body.professional-mode .tech-tag {
+    background: var(--primary-color) !important;
+    color: white !important;
+}
+
+body.professional-mode .content-section h2 {
+    background: none !important;
+    color: var(--text-primary) !important;
+    -webkit-text-fill-color: var(--text-primary) !important;
+}
+
+body.professional-mode .professional-mode-btn:hover,
+body.professional-mode .tab-button:hover {
+    background: var(--primary-color) !important;
+    color: white !important;
 }
 
 * {

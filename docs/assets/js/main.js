@@ -121,6 +121,37 @@ document.addEventListener('DOMContentLoaded', function() {
     // Professional Mode Toggle
     const professionalModeBtn = document.getElementById('professionalModeBtn');
     const body = document.body;
+    const pongTab = document.querySelector('[data-tab="pong"]');
+    const pongContent = document.getElementById('pong');
+    
+    // Function to toggle professional mode elements
+    function toggleProfessionalMode(isActive) {
+        if (isActive) {
+            // Hide pong tab and content
+            if (pongTab) pongTab.style.display = 'none';
+            if (pongContent) pongContent.style.display = 'none';
+            
+            // If currently on pong tab, switch to about tab
+            const currentTab = document.querySelector('.tab-button.active');
+            if (currentTab && currentTab.getAttribute('data-tab') === 'pong') {
+                switchTab('about');
+            }
+        } else {
+            // Show pong tab
+            if (pongTab) pongTab.style.display = '';
+            
+            // Restore pong content display behavior
+            if (pongContent) {
+                // If pong tab is currently active, show the content
+                if (pongContent.classList.contains('active')) {
+                    pongContent.style.display = 'block';
+                } else {
+                    // Reset display style to default (will be controlled by CSS)
+                    pongContent.style.display = '';
+                }
+            }
+        }
+    }
     
     // Check if professional mode is saved in localStorage
     const isProfessionalMode = localStorage.getItem('professionalMode') === 'true';
@@ -129,6 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.add('professional-mode');
         professionalModeBtn.classList.add('active');
         professionalModeBtn.innerHTML = '<i class="fas fa-palette"></i><span>Creative Mode</span>';
+        toggleProfessionalMode(true);
     }
     
     // Toggle professional mode
@@ -145,5 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
             professionalModeBtn.innerHTML = '<i class="fas fa-briefcase"></i><span>Professional Mode</span>';
             localStorage.setItem('professionalMode', 'false');
         }
+        
+        toggleProfessionalMode(isActive);
     });
 });
