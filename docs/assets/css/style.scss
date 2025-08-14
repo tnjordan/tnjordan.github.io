@@ -1140,6 +1140,35 @@ html, body {
     box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
 }
 
+.portfolio-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--gradient-neon);
+    color: var(--background) !important;
+    text-decoration: none !important;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.portfolio-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--glow-cyan);
+    background: var(--neon-pink);
+    color: var(--background) !important;
+}
+
+.portfolio-link i {
+    margin-left: 0.5rem;
+}
+
 /* Pong Game Styles */
 .pong-intro {
     color: var(--text-secondary);
