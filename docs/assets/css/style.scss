@@ -574,7 +574,7 @@ html, body {
 /* About Me Styles */
 .about-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     gap: 4rem;
     align-items: start;
 }
@@ -612,6 +612,22 @@ html, body {
 
 .about-text a:hover::after {
     width: 100%;
+}
+
+/* About image (right column) */
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.04);
 }
 
 .education {
@@ -1169,6 +1185,29 @@ html, body {
     margin-left: 0.5rem;
 }
 
+/* Ensure inline links inside portfolio items are clickable even when overlays are present */
+.portfolio-item a,
+.portfolio-note a {
+    position: relative;
+    z-index: 20;
+    pointer-events: auto;
+    cursor: pointer;
+    color: var(--neon-cyan);
+    text-decoration: underline;
+}
+
+.portfolio-item a,
+.portfolio-note a {
+    transition: color 0.18s ease, text-shadow 0.18s ease;
+}
+
+.portfolio-item a:hover,
+.portfolio-note a:hover {
+    color: var(--neon-pink);
+    text-decoration: none;
+    text-shadow: var(--glow-pink);
+}
+
 /* Pong Game Styles */
 .pong-intro {
     color: var(--text-secondary);
@@ -1525,6 +1564,14 @@ html, body {
     
     .about-text {
         text-align: left;
+    }
+    .about-image {
+        justify-content: center;
+    }
+
+    .about-image img {
+        max-width: 220px;
+        border-radius: 10px;
     }
 }
 
