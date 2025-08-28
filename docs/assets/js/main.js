@@ -155,12 +155,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Check if professional mode is saved in localStorage
     const isProfessionalMode = localStorage.getItem('professionalMode') === 'true';
+    const profileImg = document.getElementById('profileImg');
+    const PROFILE_DEFAULT = 'profile.jpg';
+    const PROFILE_PRO = 'profile-pro.jpg';
+    // Preload professional image to avoid flicker when switching
+    const _preloadPro = new Image();
+    _preloadPro.src = PROFILE_PRO;
     
     if (isProfessionalMode) {
         body.classList.add('professional-mode');
         professionalModeBtn.classList.add('active');
         professionalModeBtn.innerHTML = '<i class="fas fa-briefcase"></i><span>Professional Mode</span>';
         toggleProfessionalMode(true);
+    // Set professional profile photo
+    if (profileImg) profileImg.src = PROFILE_PRO;
     }
     
     // Toggle professional mode
@@ -172,10 +180,12 @@ document.addEventListener('DOMContentLoaded', function() {
             professionalModeBtn.classList.add('active');
             professionalModeBtn.innerHTML = '<i class="fas fa-briefcase"></i><span>Professional Mode</span>';
             localStorage.setItem('professionalMode', 'true');
+            if (profileImg) profileImg.src = PROFILE_PRO;
         } else {
             professionalModeBtn.classList.remove('active');
             professionalModeBtn.innerHTML = '<i class="fas fa-palette"></i><span>Creative Mode</span>';
             localStorage.setItem('professionalMode', 'false');
+            if (profileImg) profileImg.src = PROFILE_DEFAULT;
         }
         
         toggleProfessionalMode(isActive);
