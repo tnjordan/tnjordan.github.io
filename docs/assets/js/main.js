@@ -43,8 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (hash && document.getElementById(hash)) {
             switchTab(hash);
         } else {
-            // Default to about tab
-            switchTab('about');
+            // Keep the server-rendered/default active tab (no hash change)
+            // The HTML already marks the "about" tab as active by default.
+            // Avoid calling switchTab here to prevent adding a "#about" hash and causing automatic scrolling.
         }
     }
     
